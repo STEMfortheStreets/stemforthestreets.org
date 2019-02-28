@@ -38,12 +38,7 @@
    line-height: 1.75;
    margin: 0 auto 30px;
  }
- hr { 
-  border: 0; 
-  height: 1px; 
-  background: #333; 
-  background-image: linear-gradient(to right, #ccc, #333, #ccc);
-}
+ hr { border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);}
  div.paragraph a, p a {
    font-weight: 600;
    text-decoration: underline;
