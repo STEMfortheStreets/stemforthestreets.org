@@ -1,281 +1,369 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>SFTS - Home</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="STEM for the Streets is A student-led nonprofit organization based in Washington, D.C. aimed at increasing minority participation in STEM">
-    <meta name="keywords" content="STEM, STEM Camp in DC, Washington D.C., STEM for the Streets">
-    <meta name="author" content="Victor Del Carpio, Kevin Akers">
-    <link rel="icon" type="image/jpg" href="images/SFTS Logo.JPG" sizes="32x32" />
-    <link rel="stylesheet" type="text/css" href="styles.css" title="wsite-theme-css" />
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
-    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
-  </head>
-  <body class="no-header-page  full-width-body-off">
-    <div class="wrapper">
-      <!--Header Begin-->
-      <div class="birdseye-header" style="padding-top:0; padding-bottom:0;">
-        <div>
+<!--Code for this website adapted from
+    https://peerlift.org/
+  -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, maximum-scale=1">
+	<meta property="og:image" content="files/SFTS-Logo.png" />
+	<meta property="og:description" content="" />
+	<meta property="og:url"content="" />
+	<meta property="og:title" content="STEM for the Streets" />
+  <title>STEM for the Streets</title>
+  <link rel="shortcut icon" href="files/SFTS-Logo.png">
+  <link rel="stylesheet" href="files/styles.css" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/v4-shims.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+  <script src="files/jquery.counterup.js"></script>
+  <script src="files/main.js"></script>
+</head>
+<body>
+  <script>
+        jQuery(document).ready(function($) {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            });
+        });
+    </script>
+  <div class="index-header-section">
+    <video playsinline autoplay loop muted>
+      <source src="files/SFTS.mp4" type="video/mp4">
+    </video>
+      <div class="container">
+        <img class="logo" src="files/SFTS-Logo.png"/>
+        <h2>Ensuring that every child has an equal opportunity.</h2>
+        <a href="#opportunities" class="scroll-arrow"><i class="fa fa-caret-down"></i></a>
+      </div>
+    </div>
+    <div id="navbar">
+      <div class="container">
+        <a href="index.html"><img src="files/SFTS-Logo.png"></a>
+        <nav>
+          <ul>
+            <a href="#mission"><li>Mission</li></a>
+            <a href="#team"><li>Our Team</li></a>
+            <a onclick="show('funds-raised')" onmouseover="this.style.cursor='pointer'" href="#box-funds-raised"><li>Donate</li></a>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="body">
+      <div id="opportunities" class="opportunities">
+          <table id="colorbox" style="width:100%;">
+            <tr>
+              <td style="background-color:#ff605d;" onclick="show('schools-helped')">
+                <div class="colorbox">
+                  <h1>Schools Helped</h1>
+                  <i class="fas fa-school"></i></br>
+                  <span class="counter">3</span>
+                  <p>Schools in the Washington D.C. Area have hosted our workshops.</p>
+                </div>
+              </td>
+              <td style="background-color:#6393ce;" onclick="show('students-effected')">
+                <div class="colorbox">
+                  <h1>Students Effected</h1>
+                  <i class="fas fa-user-graduate"></i></br>
+                  <span class="counter">75</span>+
+                  <p>Students have been exposed to STEM through our program.</p>
+                </div>
+              </td>
+              <td style="background-color: #ff9942;" onclick="show('funds-raised')">
+                <div class="colorbox">
+                  <h1>Funds Raised</h1>
+                  <i class="fa fa-usd"></i></br>
+                  $<span class="counter">2500</span>+
+                  <p>Has been raised through GoFundMe, grants, &amp; pitch competitions.</p>
+                </div>
+              </td>
+            </tr>
+          </table>
+      </div>
+      <div id="mission" class="mission">
+        <div id="box-students-effected" class="students-effected">
           <div class="container">
-            <div class="logo">
-              <span>
-                <a href="index.html"><span id="wsite-title">SFTS.</span></a>
-              </span>
+            <div class="mission-text">
+              <h1>Mentor at-risk &amp; underpriviledged students</h1>
+              <h2>We don't just teach STEM, we foster &amp; build a community.</h2>
+              <p>In our second year in operation, we've held several sessions at multiple schools.</p>
             </div>
-            <div class="nav">
-              <ul>
-                <li id="active">
-                  <a href="index.html" class="wsite-menu-item">Home</a>
-                </li>
-                <li>
-                  <a href="about.html" class="wsite-menu-item">About</a>
-                </li>
-                <li>
-                  <a href="chapters.html" class="wsite-menu-item">Chapters</a>
-                </li>
-                <li>
-                  <a href="contact.html" class="wsite-menu-item">Contact</a>
-                </li>
-              </ul>
+            <div class="mission-graphics">
+              <i class="fas fa-school"></i>
+            </div>
+            <div class="mission-text">
+              <p>We focus on exposure and empowerment - our sessions have the goal of introducing a variety of STEM concepts 
+                and making science exciting while at the same time showing the students that they can be successful in STEM through 
+                the STEM professional guest aspect of our sessions.
+              </p>
             </div>
           </div>
         </div>
-      </div>
-      <!--Header End-->
-      <!--First Section Begin-->
-      <div class="banner-wrap">
-        <div class="wsite-elements wsite-not-footer wsite-header-elements">
-  				<div>
-  					<div class="wsite-header-section main-image" style="background-attachment: fixed;">
-  						<div>
-            		<div class="container">
-              		<div class="banner" style="margin-top:12.5em;">
-  									<div>
-  										<h2 class="wsite-content-title" style="text-align:left;">STEM for the Streets</h2>
-  										<div>
-  											<div>
-  												<div style="margin:0 -15px;">
-  													<table>
-  														<tbody>
-  															<tr>
-  																<td style="width:77.304347826087%;">
-  																	<div class="paragraph" style="text-align:left;">A student-led nonprofit organization based in Washington, D.C. aimed at increasing minority participation in STEM</div>
-  																</td>
-  																<td style="width:22.695652173913%;">
-  																	<div style="height:50px;"></div><!--Spacer-->
-  																</td>
-  															</tr>
-  														</tbody>
-  													</table>
-  												</div>
-  											</div>
-  										</div>
-  									</div>
-  								</div>
-            		</div>
-  						</div>
-  					</div>
-  				</div>
-  			</div>
-      </div>
-      <!--First Section End-->
-      <!--Second Section Begin-->
-      <div class="main-wrap" style="padding:0;">
-        <div id="wsite-content" class="wsite-elements wsite-not-footer">
-  				<div>
-  					<div class="wsite-section wsite-body-section wsite-section-bg-image" style="height:100%;background-image: url(./images/background.jpg) ;background-repeat: no-repeat ;background-position: 100.00% 50.00% ;background-size: 100% ;background-color: transparent ;background-size: cover;" >
-  						<div>
-            		<div class="container">
-  								<div>
-  									<div style="height:10px;"></div>
-  									<div>
-  										<div>
-  											<div style="margin:0 -15px;">
-  												<table>
-  													<tbody>
-  														<tr>
-  															<td style="width:50%;">
-  																<div style="height:50px;"></div>
-  																<h2 class="wsite-content-title">DONATE</h2>
-  																<div class="paragraph" style="text-align:justify;">STEM for the Streets connects underrepresented minority youth with scientists, engineers, and doctors and teaches them STEM through hands-on labs and engaging lesson plans. Please donate so we can continue our mission of increasing minority participation within STEM.</div>
-  																	<div style="text-align:left;"><div style="height: 10px; overflow: hidden;"></div>
-  																	<a class="wsite-button wsite-button-small wsite-button-highlight" href="https://www.gofundme.com/stem-for-the-streets" target="_blank">
-  																		<span class="wsite-button-inner">DONATE</span>
-  																	</a>
-  																	<div style="height: 10px; overflow: hidden;"></div></div>
-  																</td>
-  																<td style="width:50%;">
-  																	<div>
-  																		<div class="wsite-image">
-  																			<a>
-  																				<img src="https://github.com/STEMfortheStreets/stemforthestreets.org/blob/master/images/_DSC0162.JPG?raw=true" alt="Picture" style="width:545px;max-width:100%" />
-  																			</a>
-  																			<div style="display:block;font-size:90%"></div>
-  																		</div>
-  																	</div>
-  																</td>
-  															</tr>
-  														</tbody>
-  													</table>
-  												</div>
-  											</div>
-  										</div>
-  										<div style="height:56px;"></div>
-  										<div>
-  											<div>
-  												<div style="margin:0 -15px;">
-  													<table>
-  														<tbody>
-  															<tr>
-  																<td style="width:47.826086956522%;">
-  																	<div>
-  																		<div class="wsite-image">
-  																			<a>
-  																				<img src="https://github.com/STEMfortheStreets/stemforthestreets.org/blob/master/images/_DSC0246.JPG?raw=true" alt="Picture" style="width:auto;max-width:100%"/>
-  																			</a>
-  																			<div style="display:block;font-size:90%"></div>
-  																		</div>
-  																	</div>
-  																</td>
-  																<td style="width:52.173913043478%;">
-  																	<h2 class="wsite-content-title"><span><strong>START A CHAPTER</strong></span></h2>
-  																	<div class="paragraph" style="text-align:justify;">Reach out to us and we'll help you get started on helping others within your community.</div>
-  																	<div style="text-align:left;">
-  																		<div style="height: 10px; overflow: hidden;"></div>
-  																		<a class="wsite-button wsite-button-small wsite-button-highlight" href="chapters.html" >
-  																			<span class="wsite-button-inner">START A CHAPTER</span>
-  																		</a>
-  																		<div style="height: 10px; overflow: hidden;"></div></div>
-  																	</td>
-  															</tr>
-  														</tbody>
-  													</table>
-  												</div>
-  											</div>
-  										</div>
-  										<div style="height:50px;"></div>
-  										<h2 class="wsite-content-title" style="text-align:center;">OUR TEAM</h2>
-  										<div>
-  											<div><div style="margin:0;">
-  												<table align="center">
-  													<tbody>
-  														<tr>
-  															<td style="width:25%;">
-  																<div>
-  																	<div style="height: 10px; overflow: hidden; width: 100%;"></div>
-  																	<hr></hr>
-  																	<div style="height: 0px; overflow: hidden; width: 100%;"></div>
-  																</div>
-  																<div class="paragraph"><strong><font color="#2a2a2a">Kevin Akers</font></strong><font color="#2a2a2a">&#8203;, Co-CEO</font><br />School Without Walls '19</div>
-  															</td>
-  															<td style="width:25%;">
-  																<div>
-  																	<div style="height: 10px; overflow: hidden; width: 100%;"></div>
-  																	<hr></hr>
-  																	<div style="height: 0px; overflow: hidden; width: 100%;"></div>
-  																</div>
-  																<div class="paragraph"><strong><font color="#2a2a2a">Victor Del Carpio</font></strong><font color="#2a2a2a">&#8203;, Co-CEO</font><br />&#8203;Centreville High School '19</div>
-  															</td>
-  															<td style="width:25%;">
-  																<div>
-  																	<div style="height: 10px; overflow: hidden; width: 100%;"></div>
-  																	<hr></hr>
-  																	<div style="height: 0px; overflow: hidden; width: 100%;"></div>
-  																</div>
-  																<div class="paragraph"><strong><font color="#2a2a2a">Lukas Leijon</font></strong><font color="#2a2a2a">&#8203;, CFO</font><br />School Without Walls '19</div>
-  															</td>
-  															<td style="width:25%;">
-  																<div>
-  																	<div style="height: 10px; overflow: hidden; width: 100%;"></div>
-  																	<hr></hr>
-  																	<div style="height: 0px; overflow: hidden; width: 100%;"></div>
-  																</div>
-  																<div class="paragraph"><strong><font color="#2a2a2a">Jaden Lucas-Rutherford</font></strong><br />School Without Walls '19</div>
-  															</td>
-  														</tr>
-                              <tr>
-  															<td style="width:25%;">
-  																<div>
-  																	<div style="height: 10px; overflow: hidden; width: 100%;"></div>
-  																	<hr></hr>
-  																	<div style="height: 0px; overflow: hidden; width: 100%;"></div>
-  																</div>
-  																<div class="paragraph"><strong><font color="#2a2a2a">Aditya Gude</font></strong><font color="#2a2a2a">&#8203;, BoD</font><br />Centreville High School '19</div>
-  															</td>
-  															<td style="width:25%;">
-  																<div>
-  																	<div style="height: 10px; overflow: hidden; width: 100%;"></div>
-  																	<hr></hr>
-  																	<div style="height: 0px; overflow: hidden; width: 100%;"></div>
-  																</div>
-  																<div class="paragraph"><strong><font color="#2a2a2a">Jessica Aujla</font></strong><font color="#2a2a2a">&#8203;, BoD</font><br />&#8203;Centreville High School '19</div>
-  															</td>
-  															<td style="width:25%;">
-  																<div>
-  																	<div style="height: 10px; overflow: hidden; width: 100%;"></div>
-  																	<hr></hr>
-  																	<div style="height: 0px; overflow: hidden; width: 100%;"></div>
-  																</div>
-  																<div class="paragraph"><strong><font color="#2a2a2a">Hrishik Rangaraju</font></strong><font color="#2a2a2a">&#8203;, BoD</font><br />Centreville High School '20</div>
-  															</td>
-  															<td style="width:25%;">
-  																<div>
-  																	<div style="height: 10px; overflow: hidden; width: 100%;"></div>
-  																	<hr></hr>
-  																	<div style="height: 0px; overflow: hidden; width: 100%;"></div>
-  																</div>
-  																<div class="paragraph"><strong><font color="#2a2a2a">Marcus Brown</font></strong><font color="#2a2a2a">&#8203;, BoD</font><br />Flint Hill School '21</div>
-  															</td>
-  														</tr>
-                              <tr>
-                                <td style="width:25%;">
-                                  <div>
-                                    <div style="height: 10px; overflow: hidden; width: 100%;"></div>
-                                    <hr></hr>
-                                    <div style="height: 0px; overflow: hidden; width: 100%;"></div>
-                                  </div>
-                                  <div class="paragraph"><strong><font color="#2a2a2a">Andrew Tran</font></strong><font color="#2a2a2a">&#8203;, BoD</font><br />Justice High School '21</div>
-                                </td>
-                                <td style="width:25%;">
-                                  <div>
-                                    <div style="height: 10px; overflow: hidden; width: 100%;"></div>
-                                    <hr></hr>
-                                    <div style="height: 0px; overflow: hidden; width: 100%;"></div>
-                                  </div>
-                                  <div class="paragraph"><strong><font color="#2a2a2a">Najae Purvis</font></strong><font color="#2a2a2a">&#8203;, BoD</font><br />School Without Walls '21</div>
-                                </td>
-                              </tr>
-  													</tbody>
-  												</table>
-  											</div>
-  										</div>
-  									</div>
-  									<div class="paragraph" style="text-align:center"><font color="#2a2a2a">If you would like to assist us by joining our administrative team, please contact us at</font> <a href="mailto:stem4thestreets@gmail.com"><font color="#3387a2">stem4thestreets@gmail.com</font></a></div>
-  									</div>
-  								</div>
-        				</div>
-  						</div>
-  					</div>
-  				</div>
-      	</div>
-      <!--Second Section End-->
-      <!--Footer-->
-      <footer>
-        <div style="text-align:center;">
-          <p>
-            <a href="index.html">Home</a>
-            ·
-            <a href="about.html">About</a>
-            ·
-            <a href="chapters.html">Chapters</a>
-            ·
-            <a href="contact.html">Contact</a>
-          </p>
-          <p style="margin-bottom: 2.5em;">STEM for the Streets © 2018</p>
+        <div id="box-funds-raised" class="funds-raised">
+          <div class="container">
+            <div class="mission-text">
+              <h1>Completely Crowdsourced &amp; Bootstrapped</h1>
+              <h2>We've raised capital through GoFundMe &amp; Pitch competitions.</h2>
+              <p>Every donation goes towards lab materials and food for the kids.</p>
+            </div>
+            <div class="mission-graphics">
+              <iframe class='gfm-media-widget' image='0' coinfo='1' width='100%' height='300em' frameborder='0' id='stem-for-the-streets'></iframe>
+              <script src='https://funds.gofundme.com/js/5.0/media-widget.js'></script>
+              </div>
+            <div class="mission-text">
+              <p>Please consider making contribution to our organization so we can continue our mission of providing a quality eduaction in STEM to underpriviledged kids.</p>
+            </div>
+          </div>
         </div>
-      </footer>
-      <!--Footer End-->
+        <div id="box-schools-helped" class="schools-helped active">
+          <div class="container">
+            <div class="mission-text">
+              <h1>Our Mission</h1>
+              <h2>Show kids that they do not have to become a product of their environment.</h2>
+              <p>See our extended message and CONCAUSA application <a id="here" href="https://www.youtube.com/watch?v=x4YdLYh26No" target="_blank" style="color:white;">here</a></p>
+            </div>
+            <div class="mission-graphics">
+              <i class="fa fa-pencil"></i>
+            </div>
+            <p style="font-size:2.5vh">STEM for the Streets is a student-led non-profit organization aimed at exposing historically disenfranchised and under-served
+              children to STEM through hands-on science experiments and engaging lesson plans accompanied by scientists,
+              doctors, and engineers. Founded on the belief that every child deserves an equal opportunity, STEM for the Streets shows kids that the
+              world is bigger than their neighborhood and that they don't have to become a product of their environment. </p>
+          </div>
+        </div>
+      </div>
+      <div id="team" class="img-container" style="height:26em;">
+        <img id="teambox-img" src="images/Team.jpg">
+        <div class="centered">Our Team</div>
+      </div>
+      <table id="teambox" align="center">
+        <tr>
+          <td style="background-color:#ff605d;">
+            <a onclick="showBios('bio-1')" onmouseover="this.style.cursor='auto'" href="#bio-bio-1">
+            <div class="teambox">
+              <h1>Aditya Gude</h1>
+              <i class="fa fa-user-md"></i>
+              <p>University of Virginia</p>
+              <p>Board of Directors</p>
+            </div>
+            </a>
+          </td>
+          <td style="background-color:#6393ce;">
+            <a onclick="showBios('bio-2')" onmouseover="this.style.cursor='auto'" href="#bio-bio-2">
+            <div class="teambox">
+              <h1>Victor Del Carpio</h1>
+              <i class="fa fa-code"></i>
+              <p>Yale University</p>
+              <p>Co-CEO, Web Developer</p>
+            </div>
+            </a>
+          </td>
+          <td style="background-color: #ff9942;">
+            <a onclick="showBios('bio-3')" onmouseover="this.style.cursor='auto'" href="#bio-bio-3">
+            <div class="teambox">
+              <h1>Hrishik Rangaraju</h1>
+              <i class="fa fa-calculator"></i>
+              <p>Centreville High School</p>
+              <p>COO, Social Media Liason</p>
+            </div>
+            </a>
+          </td>
+          <td style="background-color: #2ab88e;">
+            <a onclick="showBios('bio-4')" onmouseover="this.style.cursor='auto'" href="#bio-bio-4">
+            <div class="teambox">
+              <h1>Kevin Akers</h1>
+              <i class="fa fa-rocket"></i>
+              <p>UMass Lowell</p>
+              <p>Co-CEO</p>
+            </div>
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <!--BIOS FOR TEAM MEMBERS-->
+    <div id="bio-bio-1">
+      <div style="background-color:#ff605d;">
+        <div class="infobox">
+          <h1>Aditya Gude</h1>
+          <p>Aditya Gude is a board of directer for STEM for the Streets, a leader, an entrepreneur, and a social activist. As a incoming freshman at the University of Virginia, 
+            he is pursuing a career in the medical field to become a pediatric surgeon. Although born in America, he has not forgotten his roots and found inspiration from the 
+            high poverty prevalent in Vijayawada, India and fervently strives to give equal opportunity to those less fortunate. He has changed countless lives as a HIV Tester 
+            and Counselor working in clinics throughout the DC metropolitan area such as in the Latin American Youth Center and DC Health and Wellness Clinic. </p>
+            <a href="mailto:agude123@gmail.com" target="_blank"><i class="fa fa-envelope-o"></i></a>
+            <a href="https://www.instagram.com/a_gude" target="_blank"><i class="fa fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div id="bio-bio-2">
+      <div style="background-color:#6393ce;">
+        <div class="infobox">
+          <h1>Victor Del Carpio</h1>
+          <p><a href="https://victor-hugo-dc.github.io/" target="_blank">Victor Del Carpio</a> is the Co-CEO of STEM for the Streets and a student activist, social entrepreneur, and programmer from Trujillo, Peru.
+            As an incoming freshman and QuestBridge Scholar at Yale University, Victor has always held his education as his top priority and is an advocate for equality in education, creating social ventures such as
+            <a href="http://equityprep.tk" target="_blank">EquityPrep</a> and Project Atlas Apparel. </p>
+          <a href="https://www.linkedin.com/in/victor-hugo-dc" target="_blank"><i class="fa fa-linkedin"></i></a>
+          <a href="https://victor-hugo-dc.github.io" target="_blank"><i class="fa fa-paper-plane-o"></i></a>
+          <a href="mailto:vhdelcg@gmail.com" target="_blank"><i class="fa fa-envelope-o"></i></a>
+          <a href="https://www.instagram.com/victordelcarpio" target="_blank"><i class="fa fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div id="bio-bio-3">
+      <div style="background-color: #ff9942;">
+        <div class="infobox">
+          <h1>Hrishik Rangaraju</h1>
+          <p>Hrishik Rangaraju is the Chief Operating Officer of STEM for the Streets and specializes in creating, 
+            promoting, and innovating social ventures. As a senior at CVHS, Hrishik has made it his goal to unify academic 
+            endeavors with social enterprises through activities involving community impact. Currently, he is involved with 
+            the development of mental-health empowerment products and market research. 
+          </p>
+          <a href="https://www.linkedin.com/in/hrishik-r-64688b171/" target="_blank"><i class="fa fa-linkedin"></i></a>
+          <a href="mailto:rhrishik@gmail.com" target="_blank"><i class="fa fa-envelope-o"></i></a>
+          <a href="https://www.instagram.com/hrishikk" target="_blank"><i class="fa fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div id="bio-bio-4">
+      <div style="background-color: #2ab88e;">
+        <div class="infobox">
+          <h1>Kevin Akers</h1>
+          <p>Kevin Akers is the Founder and Co-CEO of STEM for the Streets as well as an entrepreneur
+          with a passion for Aerospace Engineering. Kevin has always put an emphasis on his education and
+          is a DC-CAP Scholar, a MITES '18 Participant, a LEAP Foundation ambassador, and an incoming
+          freshman at the University of Massachusetts-Lowell which he will attend on scholarship.</p>
+          <a href="mailto:kakers4224@gmail.com" target="_blank"><i class="fa fa-envelope-o"></i></a>
+          <a href="https://www.instagram.com/kevinthomasakers/" target="_blank"><i class="fa fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <table  id="teambox" align="center">
+      <tbody>
+        <tr>
+          <td style="background-color: #ff8080;">
+            <a onclick="showBios('bio-5')" onmouseover="this.style.cursor='auto'" href="#bio-bio-5">
+            <div class="teambox">
+              <h1>Andrew Tran</h1>
+              <i class="fa fa-terminal"></i>
+              <p>Justice High School</p>
+              <p>CTO</p>
+            </div>
+            </a>
+          </td>
+          <td style="background-color:#80bfff;">
+            <a onclick="showBios('bio-6')" onmouseover="this.style.cursor='auto'" href="#bio-bio-6">
+            <div class="teambox">
+              <h1>Allison Eastburn</h1>
+              <i class="fas fa-cogs"></i>
+              <p>School Without Walls</p>
+              <p>Board of Directors</p>
+            </div>
+            </a>
+          </td>
+          <td style="background-color: #ffbb33;">
+            <a onclick="showBios('bio-7')" onmouseover="this.style.cursor='auto'" href="#bio-bio-7">
+            <div class="teambox">
+              <h1>Jaden Rutherford</h1>
+              <i class="fa fa-table"></i>
+              <p>University of SF</p>
+              <p>CFO</p>
+            </div>
+            </a>
+          </td>
+          <td style="background-color: #84e184;">
+            <a onclick="showBios('bio-8')" onmouseover="this.style.cursor='auto'" href="#bio-bio-8">
+              <div class="teambox">
+                <h1>Join Our Team</h1>
+                <p>Apply to our team here!</p>
+                <div class="fa-lg">
+                  <i class="fas fa-cog fa-spin"></i>
+                </div>
+              </div>
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <!--BIOS FOR TEAM MEMBERS-->
+    <div id="bio-bio-5">
+      <div style="background-color:#ff8080;">
+        <div class="infobox">
+          <h1>Andrew Tran</h1>
+          <p>Andrew Tran is a member of the Board of Directors for SFTS, a computer programmer, and a student activist.
+          As the son of two Vietnamese immigrants seeking asylum, Andrew strives to make STEM education more accessible
+          to the less fortunate. A social entrepreneur, Andrew has also created his own venture
+          <a href="https://itunes.apple.com/us/app/mathtivity/id1452119945?mt=8" target="_blank">Mathtivity</a> and has helped thousands
+          outsude of the classroom.</p>
+          <a href="https://www.linkedin.com/in/andrew-tran-8b1b09179/" target="_blank"><i class="fa fa-linkedin"></i></a>
+          <a href="mailto:tranandrew30@gmail.com" target="_blank"><i class="fa fa-envelope-o"></i></a>
+          <a href="https://www.instagram.com/tranandrew30/" target="_blank"><i class="fa fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div id="bio-bio-6">
+      <div style="background-color:#80bfff;">
+        <div class="infobox">
+          <h1>Allison Eastburn</h1>
+          <p>Allison Eastburn is a member of the Board of Directors for STEM for the Streets and a founding
+          member of STEM for the Streets 4-Girls. From Tokyo, Japan, Allison is an advocate for Women's rights
+          and gender equality and has a passion for Astronomy and Aerospace Engineering. As a trilingual student having
+          lived all over the United States and Japan, Allison values breaking down the language barrier and making STEM
+          education accessible to everyone.</p>
+          <a href="mailto:allisoneastburn@gmail.com" target="_blank"><i class="fa fa-envelope-o"></i></a>
+        </div>
+      </div>
+    </div>
+    <div id="bio-bio-7">
+      <div style="background-color:#ffbb33;">
+        <div class="infobox">
+          <h1>Jaden Lucas-Rutherford</h1>
+          <p>Jaden Lucas-Rutherford is the treasurer and financial advisor for STEM for the Streets.
+            Through his work with MDA, SUMMA, Charlie's Place, and the LEAP Foundation, Jaden has worked 
+            to facilitate lanes of discourse and has strived for the benefit of his community. As an incoming 
+            freshman at the University of San Francisco, Jaden hopes to continue both his education and community 
+            work throughout his professional career.
+          </p>
+            <a href="mailto:jhawkelr@gmail.com" target="_blank"><i class="fa fa-envelope-o"></i></a>
+            <a href="https://www.instagram.com/barelyfunctioning" target="_blank"><i class="fa fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div id="bio-bio-8">
+      <div style="background-color: #84e184;">
+        <div class="infobox">
+          <h1>Join Our Team</h1>
+          <p>To apply to join SFTS, please fill out the application found <a href="https://docs.google.com/forms/d/e/1FAIpQLSezGyvHtF4Lw1UQMvPlC6e1LM4PTcBNss25qDJjajUhB8rr3w/viewform">here</a>.</p>
+          <i class="fa fa-users" aria-hidden="true" style="font-size: 5em !important;"></i>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="footer-section">
+      <div class="container">
+        <ul class="socialmedia">
+          <li><a href="https://www.instagram.com/stem4thestreets/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="index.html"><img src="files/SFTS-Logo-white.png"></a></li>
+          <li><a href="mailto:stem4thestreets@gmail.com" target="_blank"><i class="fa fa-envelope-square"></i></a></li>
+        </ul>
+        <div class="footer-nav-wrapper">
+          <nav class="footer-nav">
+            <ul>
+              <li>Our Organization</li>
+              <hr>
+              <a href="#mission"><li>Mission</li></a>
+              <a href="#team"><li>Our Team</li></a>
+              <a href="https://www.gofundme.com/stem-for-the-streets"><li>Donate</li></a>
+            </ul>
+          </nav>
+        </div>
+        <!--<p>STEM for the Streets is an official 501(c)(3) nonprofit. Your donation is tax-deductible.</p>-->
+      </div>
     </div>
   </body>
-</html>
+  </html>
