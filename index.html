@@ -19,6 +19,16 @@
 <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
 <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
 <style type='text/css'>
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.column {
+	float: left;
+	width: 33.33%;
+	padding: 10px;
+}
 .wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) p, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-description, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, #wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {font-family:"Montserrat" !important;}
 #wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {color:#9b9b9b !important;}
 .wsite-elements.wsite-footer div.paragraph, .wsite-elements.wsite-footer p, .wsite-elements.wsite-footer .product-block .product-title, .wsite-elements.wsite-footer .product-description, .wsite-elements.wsite-footer .wsite-form-field label, .wsite-elements.wsite-footer .wsite-form-field label{}
@@ -253,40 +263,22 @@ _W.setup_model_rpc({"rpc_namespace":"_W.CustomerAccounts.RPC","model_namespace":
 
 <h2 class="wsite-content-title" style="text-align:center;">FAST FACTS</h2>
 
-<div style="text-align: center;"><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
-	<table class="wsite-multicol-table">
-		<tbody class="wsite-multicol-tbody">
-			<tr class="wsite-multicol-tr">
-				<td class="wsite-multicol-col" style="width:33.333333333333%; padding:0 15px;">
-					
-						
-
-<div class="paragraph" style="text-align:center;">Students Effected</div>
-
-<h2 class="wsite-content-title" style="text-align:center;"><font color="#626262">200+</font></h2>
-
-
-					
-				</td>				<td class="wsite-multicol-col" style="width:33.333333333333%; padding:0 15px;">
-					
-						
-
-<div class="paragraph" style="text-align:center;">Funds Raised</div>
-
-<h2 class="wsite-content-title" style="text-align:center;"><font color="#626262">$2,500+</font></h2>
-
-
-					
-				</td>				<td class="wsite-multicol-col" style="width:33.333333333333%; padding:0 15px;">
-					
-						
-
-
-					
-				</td>			</tr>
-		</tbody>
-	</table>
-</div></div></div>
+<div>
+	<div class="row">
+		<div class="column">
+			<p>Students Effected</p>
+			<h2>200+</h2>
+		</div>
+		<div class="column">
+			<p>Funds Raised</p>
+			<h2>$2,500+</h2>
+		</div>
+		<div class="column">
+			<p>Schools Partnered</p>
+			<h2>3</h2>
+		</div>
+	</div>
+</div>
 
 <div class="wsite-spacer" style="height:95px;"></div>
 
