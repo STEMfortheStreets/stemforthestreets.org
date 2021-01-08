@@ -1,0 +1,572 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="STEM for the Streets is a non-profit organization aimed at exposing underprivileged BIPOC youth to STEM through hands-on lab experiments and engaging lesson plans accompanied by scientists, doctors, and engineers of color.">
+    <title>STEM for the Streets</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/mission.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/nai-icons.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <script src="https://kit.fontawesome.com/c614bd0211.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+</head>
+<body>
+    <header id="header">
+        <section class="principal">
+            <div class="lock">
+                <a href="/" class="home">
+                    <img src="./images/SFTS-Logo.png" style="max-width: 5em;" alt="STEM for the Streets" class="logo-img">
+                </a>
+                <button id="toggle-menu" type="button" aria-controls="menu" aria-expanded="true">
+                    <i class="nai-icon-hamburger-nav" aria-hidden="true"></i>
+                </button>
+                <div id="menu">
+                    <button class="collapse" type="button" aria-controls="menu" aria-expanded="true">
+                        <span class="logo" aria-hidden="true">
+                            <img src="./images/SFTS-Logo.png" style="max-width: 5em;" alt="STEM for the Streets" class="logo-img">
+                        </span>
+                        <i class="nai-icon-close-x" aria-hidden="true"></i>
+                    </button>
+                    <!--Link to scroll down to Mission-->
+                    <button id="toggle-category-one" type="button" aria-controls="category-one" aria-expanded="false">
+                        <span class="underline">
+                            <span class="text">
+                                Mission
+                            </span>
+                        </span>
+                    </button>
+                    <!--The following is hidden until in mobile, redirects to actual mission page-->
+                    <nav id="category-one" hidden="">
+                        <a href="mission.html">
+                            <span class="underline">
+                                <span class="text">
+                                    Specific part of Mission
+                                </span>
+                            </span>
+                            <i class="nai-icon-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </nav>
+                    <button id="toggle-category-two" type="button" aria-controls="category-two" aria-expanded="false">
+                        <span class="underline">
+                            <span class="text">
+                                About
+                            </span>
+                        </span>
+                    </button>
+                    <nav id="category-two" hidden="">
+                        <a href="about.html">
+                            <span class="underline">
+                                <span class="text">
+                                    Specific Part of About
+                                </span>
+                            </span>
+                            <i class="nai-icon-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </nav>
+                    <!--<button id="toggle-category-three" type="button" aria-controls="category-three" aria-expanded="false">
+                        <span class="underline">
+                            <span class="text">
+                                Contact Us
+                            </span>
+                        </span>
+                    </button>
+                    <nav id="category-three" hidden="">
+                        <a href="contact.html">
+                            <span class="underline">
+                                <span class="text">
+                                    Contact Us
+                                </span>
+                            </span>
+                            <i class="nai-icon-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </nav>-->
+
+                    <a href="#donate" class="tickets">
+                        <span>
+                            Donate
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </header>  
+    <main id="main">
+        <header id="subheader" class="default" data-theme="light"  data-sidebar>
+            <div class="title">
+                <div class="content">
+                    <nav id="breadcrumbs">
+                        <div class="wrapper">
+                            <a href="">
+                                <span>STEM for the Streets</span>
+                                <span>//</span>
+                            </a>
+                        </div>
+                    </nav>
+                    <h1>About Us</h1>
+                    <p>Lorem Ipsum</p>
+                </div>
+            </div>
+            <div class="sidebar">
+                <button id="toggle-anchors" class="expandable" aria-controls="anchors" aria-expanded="false">
+                    <span>
+                        About Us
+                    </span>
+                    <i class="nai-icon-caret-up" aria-hidden="true"></i>
+                    <i class="nai-icon-caret-down" aria-hidden="true"></i>
+                </button>
+                <nav id="anchors">
+                    <a href="">
+                        <span class="underline">
+                            <span class="text">
+                                Events for Locals
+                            </span>
+                        </span>
+                    </a>
+                    <a href="">
+                        <span class="underline">
+                            <span class="text">
+                                Read to Reef
+                            </span>
+                        </span>
+                    </a>
+                    <a href="">
+                        <span class="underline">
+                            <span class="text">
+                                Community Connections
+                            </span>
+                        </span>
+                    </a>
+                </nav>
+            </div>
+        </header>
+<section class="raised" data-image="left" data-theme="white">
+    <div class="image" id="image-three">
+        <!--image three-->
+    </div>
+    <div class="lock">
+        <div class="rich-text">
+            <div class="negate">
+                <div class="consume">
+                    <h2>
+                        <small>
+                            Our Mission
+                        </small>
+                        <span>
+                            Ensuring Equal Opportunity within STEM
+                        </span>
+                    </h2>
+                    <p>
+                        STEM for the Streets is a nonprofit organization whose mission is to familiarize BIPOC youth to STEM concepts with interactive labs and experiments while, at the same time, creating a community to foster academic success.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> 
+        
+            
+<div id="events-for-locals"></div>
+<div id="read-to-reef"></div>
+<section
+
+  class="callout"
+
+  data-theme="blue"
+
+  
+    data-image="right"
+
+    
+  
+>
+
+  
+    
+    <style>
+
+      #i160969139812 {
+      
+        background-image: url( https://aqua.org/assets/people/_generic_920px_1x/2017-09-22_youth-education_helper-showing-kids-horseshoe-crab-promoting-read-to-reef_center-center_001.jpg );
+
+        
+          background-position: 62.62% 43.37%;
+
+        
+      }
+
+      @media ( -webkit-min-device-pixel-ratio: 2 ), ( min-resolution: 97dpi ) {
+
+        #i160969139812 {
+
+          background-image: url( https://aqua.org/assets/people/_generic_920px_2x/2017-09-22_youth-education_helper-showing-kids-horseshoe-crab-promoting-read-to-reef_center-center_001.jpg );
+
+        }
+
+      }
+      
+      @media ( min-width: 920px ) {
+
+        #i160969139812 {
+
+          background-image: url( https://aqua.org/assets/people/_generic_960px_1x/2017-09-22_youth-education_helper-showing-kids-horseshoe-crab-promoting-read-to-reef_center-center_001.jpg );
+
+        }
+
+      }
+
+      @media ( min-width: 920px ) and ( -webkit-min-device-pixel-ratio: 2 ), ( min-width: 920px ) and ( min-resolution: 97dpi ) {
+
+        #i160969139812 {
+
+          background-image: url( https://aqua.org/assets/people/_generic_1920px_1x/2017-09-22_youth-education_helper-showing-kids-horseshoe-crab-promoting-read-to-reef_center-center_001.jpg );
+
+        }
+
+      }
+
+    </style>
+
+    <div id="i160969139812" class="image"></div>
+
+  
+  <div class="rich-text">
+
+    <div class="negate">
+
+      <div class="consume">
+
+        
+          <h2>
+
+            <small></small>
+
+            <span>Read to Reef</span>
+
+          </h2>
+
+        
+        <p>Free Aquarium admission is available to young readers and their families each spring and fall through participation in our book club! New seasons begin in March and October when bookmarks become available at Enoch Pratt Free Library branches.</p>
+<p><em>In partnership with Enoch Pratt Free Library</em></p>
+
+        
+        
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="rich-text">
+
+  <div class="lock">
+
+    <div class="negate">
+
+      <div class="consume">
+
+        <p><strong>Read to Reef: Fall 2020 Season</strong></p>
+<p>Bookmarks for the fall 2020 season of Read to Reef are available to Baltimore-area children in fifth grade and younger from select Pratt Library sidewalk service locations throughout October 2020, or while supplies last. Readers have until January 18, 2021, to complete their reading and visit the National Aquarium.</p>
+<p>For everyone's safety, we are requiring all visitors to reserve their timed entries to the Aquarium in advance. Before your visit, please review our <a target="_blank" href="https://aqua.org/visit/covid-response" rel="noreferrer noopener">updated protocols and procedures</a> in response to COVID-19 before you arrive on-site.</p>
+<p>Click below to reserve a timed entry using your Read to Reef bookmark code.</p>
+<div class="buttons">
+
+
+<a class="solid-navy hover-solid-blue" href="https://na.force.com/reservations/s/read-to-reef">
+<span class="text">Reserve Your Time</span></a>
+
+
+<br /></div>
+<p>Sign up for <a href="https://aqua.secure.force.com/mc/pledge?pid=a5t4A000000EYkW" target="_blank" rel="noreferrer noopener">Read to Reef email updates</a>!</p>
+<p><em>Please note that Read to Reef bookmarks and corresponding National Aquarium tickets are intended only for Baltimore City students in fifth grade or younger. If you're in possession of a Read to Reef bookmark and can't use it, please give it to a young reader in your life.</em></p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="accordion">
+
+  <div class="lock">
+
+    
+    
+      
+      <button aria-controls="i16096366776" aria-expanded="false">
+
+        <i class="nai-icon-plus-sign" aria-hidden="true"></i>
+
+        <i class="nai-icon-minus-sign" aria-hidden="true"></i>
+
+        <span>Who can participate?</span>
+
+      </button>
+
+      <div id="i16096366776" class="item">
+
+        <div class="rich-text">
+
+          <div class="negate">
+
+            <div class="consume">
+
+              <p>Baltimore-area children in fifth grade and younger with a valid Enoch Pratt Free Library card may receive a Read to Reef bookmark and record the five aquatic- or conservation-themed books they have read that are appropriate for their age levels. Children may receive one bookmark per program season.</p>
+<p>Did you know your child can have their own library card? Visit the <a href="http://www.prattlibrary.org/services/librarycards.aspx?id=6703" target="_blank" rel="noreferrer noopener">Enoch Pratt Free Library website</a> to learn how to apply. Please note the child must be present with parent, grandparent or legal guardian when registering.</p>
+
+            </div>
+
+          </div>
+        
+        </div>
+
+      </div>
+
+    
+      
+      <button aria-controls="i16096366777" aria-expanded="false">
+
+        <i class="nai-icon-plus-sign" aria-hidden="true"></i>
+
+        <i class="nai-icon-minus-sign" aria-hidden="true"></i>
+
+        <span>What is the program&#039;s schedule?</span>
+
+      </button>
+
+      <div id="i16096366777" class="item">
+
+        <div class="rich-text">
+
+          <div class="negate">
+
+            <div class="consume">
+
+              <p>Bookmarks for the fall 2020 season are available from select <a href="https://www.prattlibrary.org/sidewalk-service/">Pratt Library sidewalk service</a> locations throughout October 2020, or while supplies last.</p>
+<p>You have until January 18, 2021, to complete your reading and visit the Aquarium.</p>
+<p>Blackout dates for the fall season are December 5-6, 2020 and December 26-27, 2020. </p>
+
+            </div>
+
+          </div>
+        
+        </div>
+
+      </div>
+
+    
+      
+      <button aria-controls="i16096366778" aria-expanded="false">
+
+        <i class="nai-icon-plus-sign" aria-hidden="true"></i>
+
+        <i class="nai-icon-minus-sign" aria-hidden="true"></i>
+
+        <span>What do I need to do to redeem my bookmark and receive Aquarium tickets?</span>
+
+      </button>
+
+      <div id="i16096366778" class="item">
+
+        <div class="rich-text">
+
+          <div class="negate">
+
+            <div class="consume">
+
+              <ul><li>Bookmark must be completed in full with the titles of five books the child has read before arrival at the Aquarium.</li><li>All Read to Reef guests must reserve their visit date and entry time in advance through our online ticket <a href="https://na.force.com/reservations/s/read-to-reef" target="_blank" rel="noreferrer noopener">reservation portal</a>. You will use the alphanumeric code printed on the bottom of your bookmark when reserving your tickets online. This code can only be used once for a maximum of four tickets. During the online reservation process, you will select the number of adult (12 years and older) and child (3 to 11 years old) tickets. Children 2 years and younger do not require tickets. If you do not use all four tickets in your transaction, they are forfeited and cannot be used on a separate day.</li><li>Tickets are available on a first-come, first-served basis through our online ticket reservation portal.</li><li>Guests will need to stop by the will call window at the Aquarium on the day of their visit to pick up their timed entry tickets.</li><li>The bookmark is for one-time-use and cannot be used for multiple visits.</li><li>Bookmark is void if perforation is detached.</li><li>The bookmark cannot be reproduced, is non-transferable, will not be replaced if lost and has no value.</li><li>Tickets do not include 4D Immersion Films, special programs or events.</li><li>Additional guests beyond the four admitted with the bookmark pay full admission rates.</li><li>Bookmarks are subject to availability while supplies last and expire on January 18, 2021. Blackout dates are December 5-6, 2020 and December 26-27, 2020.</li></ul>
+
+            </div>
+
+          </div>
+        
+        </div>
+
+      </div>
+
+    
+  </div>
+
+</section>
+
+
+
+
+
+ 
+      
+          
+      
+      
+        
+            
+<div id="community-connections"></div>
+
+          
+      
+          
+      
+      
+        
+            
+<section class="banner">
+
+  
+  <style>
+
+    
+    
+      #i160969139813 {
+
+        background-image: url( https://aqua.org/assets/people/_generic_768px_1x/2019-10-25_people_kids-jellies_001.jpg );
+
+        
+          background-position: 45.27% 68.28%;
+
+        
+      }
+
+      @media ( -webkit-min-device-pixel-ratio: 2 ), ( min-resolution: 97dpi ) {
+      
+        #i160969139813 {
+
+          background-image: url( https://aqua.org/assets/people/_generic_768px_2x/2019-10-25_people_kids-jellies_001.jpg );
+
+        }
+
+      }
+
+      @media ( min-width: 768px ) {
+
+        #i160969139813 {
+
+          background-image: url( https://aqua.org/assets/people/_generic_1920px_1x/2019-10-25_people_kids-jellies_001.jpg );
+
+        }
+
+      }
+      
+      @media ( min-width: 768px ) and ( -webkit-min-device-pixel-ratio: 2 ), ( min-width: 768px ) and ( min-resolution: 97dpi ) {
+      
+        #i160969139813 {
+
+          background-image: url( https://aqua.org/assets/people/_generic_1920px_2x/2019-10-25_people_kids-jellies_001.jpg );
+
+        }
+
+      }
+
+    
+  </style>
+
+  
+  
+    <div id="i160969139813" class="image"></div>
+
+  
+</section>
+        <footer id="footer">
+            <section class="title">
+                <div class="lock">
+                    <a href="/" class="home">
+                        <img src="./images/SFTS-Logo.png" style="width: 10em;" alt="STEM for the Streets" aria-hidden="true">
+                    </a>
+                    <p>
+                        STEM for the Streets is a student-led non-profit organization aimed at exposing historically disenfranchised and under-served children to STEM through hands-on science experiments and engaging lesson plans accompanied by scientists, doctors, and engineers. 
+                    </p>
+                </div>
+            </section>
+            <section class="supplemental">
+                <div class="lock">
+                    <!--change "education" to "Mission" + list specific parts of it-->
+                    <nav class="education">
+                        <a href="mission.html">
+                            <span class="underline">
+                                <span class="text">
+                                    Mission
+                                </span>
+                            </span>
+                        </a>
+                        <!--here list the subsections of Mission - same format as education-->
+                        <a href="mission.html#section-one">
+                            <span class="underline">
+                                <span class="text">
+                                    Section One
+                                </span>
+                            </span>
+                        </a>
+                    </nav>
+                    <!--dont have to change this-->
+                    <nav class="about-us">
+                        <a href="about.html">
+                            <span class="underline">
+                                <span class="text">
+                                    About
+                                </span>
+                            </span>
+                        </a>
+                        <a href="about.html#section-one">
+                            <span class="underline">
+                                <span class="text">
+                                    Section One
+                                </span>
+                            </span>
+                        </a>
+                    </nav>
+                    <nav class="contact-us">
+                        <a href="contact.html">
+                            <span class="underline">
+                                <span class="text">
+                                    Contact Us
+                                </span>
+                            </span>
+                        </a>
+                        <a href="contact.html#section-one">
+                            <span class="underline">
+                                <span class="text">
+                                    Section One
+                                </span>
+                            </span>
+                        </a>
+                    </nav>
+                    <nav class="support">
+                        <a class="tickets" href="">
+                            Button One
+                        </a>
+                        <a href="" target="">
+                            Button Two
+                        </a>
+                    </nav>
+                </div>
+            </section>
+            <section class="ancillary">
+                <div class="lock">
+                    <div class="information">
+                        <div>
+                            © 2020 STEM for the Streets
+                        </div>
+                        <!--the following can be omitted, unless of course we add a privacy/security policy-->
+                        <a href="" target="">
+                            <span class="underline">
+                                <span class="text">
+                                    Privacy and Security Policy
+                                </span>
+                            </span>
+                        </a>
+                        <address>
+                            Washington, D.C.
+                        </address>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </main>
+    <script src="./js/all.js"></script>
+</body>
+</html>

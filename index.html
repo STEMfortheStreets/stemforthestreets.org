@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="STEM for the Streets is a non-profit organization aimed at exposing underprivileged BIPOC youth to STEM through hands-on lab experiments and engaging lesson plans accompanied by scientists, doctors, and engineers of color.">
+    <title>STEM for the Streets</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/nai-icons.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <script src="https://kit.fontawesome.com/c614bd0211.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+</head>
+<body>
+    <header id="header">
+        <section class="principal">
+            <div class="lock">
+                <a href="index.html" class="home">
+                    <img src="./images/SFTS-Logo.png" style="max-width: 5em;" alt="STEM for the Streets" class="logo-img">
+                </a>
+                <button id="toggle-menu" type="button" aria-controls="menu" aria-expanded="true">
+                    <i class="nai-icon-hamburger-nav" aria-hidden="true"></i>
+                </button>
+                <div id="menu">
+                    <button class="collapse" type="button" aria-controls="menu" aria-expanded="true">
+                        <span class="logo" aria-hidden="true">
+                            <img src="./images/SFTS-Logo.png" style="max-width: 5em;" alt="STEM for the Streets" class="logo-img">
+                        </span>
+                        <i class="nai-icon-close-x" aria-hidden="true"></i>
+                    </button>
+                    <button id="toggle-category-one" type="button" aria-controls="category-one" aria-expanded="false">
+                        <span class="underline">
+                            <span class="text">
+                                Mission
+                            </span>
+                        </span>
+                    </button>
+                    <nav id="category-one" hidden="">
+                        <a href="mission.html">
+                            <span class="underline">
+                                <span class="text">
+                                    Mission
+                                </span>
+                            </span>
+                            <i class="nai-icon-arrow-right" aria-hidden="true"></i>
+                        </a>
+                        <a href="mission.html#mission-statement">
+                            <span class="underline">
+                                <span class="text">
+                                    Mission Statement
+                                </span>
+                            </span>
+                            <i class="nai-icon-arrow-right" aria-hidden="true"></i>
+                        </a>
+                        <a href="mission.html#ways-to-support">
+                            <span class="underline">
+                                <span class="text">
+                                    Ways to Support
+                                </span>
+                            </span>
+                            <i class="nai-icon-arrow-right" aria-hidden="true"></i>
+                        </a>
+                        <a href="mission.html#donation-impact">
+                            <span class="underline">
+                                <span class="text">
+                                    Donation Impact
+                                </span>
+                            </span>
+                            <i class="nai-icon-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </nav>
+                    <button id="toggle-category-two" type="button" aria-controls="category-two" aria-expanded="false">
+                        <span class="underline">
+                            <span class="text">
+                                About
+                            </span>
+                        </span>
+                    </button>
+                    <nav id="category-two" hidden="">
+                        <a href="about.html">
+                            <span class="underline">
+                                <span class="text">
+                                    About
+                                </span>
+                            </span>
+                            <i class="nai-icon-arrow-right" aria-hidden="true"></i>
+                        </a>
+                        <a href="about.html#our-story">
+                            <span class="underline">
+                                <span class="text">
+                                    Our Story
+                                </span>
+                            </span>
+                            <i class="nai-icon-arrow-right" aria-hidden="true"></i>
+                        </a>
+                        <a href="about.html#our-impact">
+                            <span class="underline">
+                                <span class="text">
+                                    Our Impact
+                                </span>
+                            </span>
+                            <i class="nai-icon-arrow-right" aria-hidden="true"></i>
+                        </a>
+                        <a href="about.html#our-methodology">
+                            <span class="underline">
+                                <span class="text">
+                                    Our Methodology
+                                </span>
+                            </span>
+                            <i class="nai-icon-arrow-right" aria-hidden="true"></i>
+                        </a>
+                        <a href="about.html#contact-us">
+                            <span class="underline">
+                                <span class="text">
+                                    Contact Us
+                                </span>
+                            </span>
+                            <i class="nai-icon-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </nav>
+                    <a href="https://www.gofundme.com/f/stem-for-the-streets" class="tickets">
+                        <span>
+                            Donate
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main id="main">
+        <section class="reel" data-state="playing">
+            <div class="top">
+                <div class="control">
+                    <button type="button">
+                        <span>
+                            <svg height="40" width="40">
+                                <circle cx="20" cy="20" fill="transparent" r="18" stroke="#fff" stroke-width="2"></circle>
+                                <circle cx="20" cy="20" fill="transparent" r="18" stroke="#68d2dF" stroke-width="4" style="stroke-dasharray: 113.097, 113.097; stroke-dashoffset: 30.3499;"></circle>
+                            </svg>
+                            <i aria-hidden="true" class="nai-icon-play"></i>
+                            <i aria-hidden="true" class="nai-icon-pause"></i>
+                            <i aria-hidden="true" class="nai-icon-arrow-up"></i>
+                            <i aria-hidden="true" class="nai-icon-arrow-right"></i>
+                            <i aria-hidden="true" class="nai-icon-arrow-down"></i>
+                            <i aria-hidden="true" class="nai-icon-arrow-left"></i>
+                        </span>
+                    </button>
+                </div>
+                <div class="items">
+                    <div class="item" hidden="" id="image-one">
+
+                    </div>
+                    <div class="item" hidden="" id="image-two">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="dots">
+                    <button class="" data-duration="10" data-index="0" type="button">
+                        <!--item one-->
+                    </button>
+                    <button class="current" data-duration="10" data-index="1" type="button">
+                        <!--item two-->
+                    </button>
+                </div>
+                <div class="items">
+                    <div class="rich-text" hidden="">
+                        <div class="negate">
+                            <div class="consume">
+                                <h2>
+                                    <small>
+                                        Making Change Through STEM Education
+                                    </small>
+                                    <span>
+                                        STEM for the Streets
+                                    </span>
+                                </h2>
+                                <p>
+                                    Supporting the accessibility of STEM education in underpriveleged communities.
+                                </p>
+                                <nav>
+                                    <div class="buttons">
+                                        <a href="about.html" class="solid-white hover-solid-navy w768-hover-solid-blue">
+                                            <span class="text">
+                                                About Us
+                                            </span>
+                                        </a>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <!--second slide-->
+                    <div class="rich-text">
+                        <div class="negate">
+                            <div class="consume">
+                                <h2>
+                                    <small>
+                                        Promoting Racial & Gender Equity in STEM
+                                    </small>
+                                    <span>
+                                        SFTS for Girls + Gender Minorities
+                                    </span>
+                                </h2>
+                                <p>
+                                    Our programs are designed towards increasing the participation of BIPOC, Girls, and Gender Minorities in the STEM fields.
+                                </p>
+                                <nav>
+                                    <div class="buttons">
+                                        <a class="solid-white hover-solid-navy w768-hover-solid-blue" href="about.html#our-methodology">
+                                            <span class="text">
+                                                Our Programs
+                                            </span>
+                                        </a>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="raised text-section" data-image="left" data-theme="white">
+            <div class="image" id="image-three">
+                <!--image three-->
+            </div>
+            <div class="lock">
+                <div class="rich-text">
+                    <div class="negate">
+                        <div class="consume">
+                            <h2>
+                                <small>
+                                    Our Mission
+                                </small>
+                                <span>
+                                    Ensuring Equal Opportunity within STEM
+                                </span>
+                            </h2>
+                            <p>
+                                STEM for the Streets is a nonprofit organization whose mission is to familiarize BIPOC youth to STEM concepts with interactive labs and experiments while, at the same time, creating a community to foster academic success.
+                            </p>
+                            <div class="item">
+                                <hr/>
+                                <div class="mock-nav">
+                                    <div class="buttons">
+                                        <a class="solid-navy hover-solid-blue" href="mission.html#mission-statement">
+                                            <span>
+                                                Mission
+                                            </span>
+                                            <i aria-hidden="true" class="nai-icon-arrow-right"></i>
+                                        </a>
+                                        <!--<button class="next solid-navy hover-solid-blue" type="button">
+                                            <span>
+                                                Mission
+                                            </span>
+                                            <i aria-hidden="true" class="nai-icon-arrow-right"></i>
+                                        </button>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>        
+        <!--Mission Statement-->
+        <section class="feature">
+            <div class="lock">
+                <div class="image" id="image-four">
+                    <!--image four-->
+                </div>
+                <div class="wrapper">
+                    <div class="rich-text">
+                        <div class="negate">
+                            <div class="consume">
+                                <h2>
+                                    <small>
+                                        About Us
+                                    </small>
+                                    <span>
+                                        Fostering a Community Around an Interest in STEM
+                                    </span>
+                                </h2>
+                                <p>
+                                    STEM for the Streets aims to introduce various concepts in science, engineering, and technology to underpriveleged, BIPOC youth.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <a href="about.html#our-methodology"> <!--link to a specific part of another page-->
+                            <div class="content">
+                                <h3>
+                                    <span>
+                                        Our Methodology
+                                    </span>
+                                </h3>
+                                <p>
+                                    ​SFTS believes that the path to success lies in the community, which is why we emphasize learning as a group so much during our sessions.
+                                </p>
+                            </div>
+                            <i aria-hidden="true" class="nai-icon-arrow-right"></i>
+                        </a>
+                        <a href="about.html#our-methodology"> <!--link to a specific part of another page-->
+                            <div class="content">
+                                <h3>
+                                    <span>
+                                        BIPOC STEM Profressionals
+                                    </span>
+                                </h3>
+                                <p>
+                                    For our labs, we invite BIPOC engineers, doctors, and scientists to help explain and mentor students so they can gain a more enriching experience.
+                                </p>
+                            </div>
+                            <i aria-hidden="true" class="nai-icon-arrow-right"></i>
+                        </a>
+                        <a href="about.html#our-methodology">
+                            <div class="content">
+                                <h3>
+                                    <span>
+                                        Hands-On Experiments
+                                    </span>
+                                </h3>
+                                <p>
+                                    Learning-by-doing gives the students an intuitive understanding of the material in every lesson and allows them to grasp a deeper understanding for STEM concepts.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--change to section two-->
+        <section class="rainbow-cards">
+            <div class="lock">
+                <div class="rich-text">
+                    <div class="negate">
+                        <div class="consume">
+                            <h2>
+                                <span>
+                                    Ways to Support
+                                </span>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="list" data-columns="3">
+                    <div class="cards">
+                        <div class="rainbow card" data-color="turquoise" data-text-alignment="center" data-vertical-justification="apart">
+                            <div class="top">
+                                <h3>
+                                    <small>
+                                        Individual
+                                    </small>
+                                    <span>
+                                        Individual Donations
+                                    </span>
+                                </h3>
+                            </div>
+                            <div class="bottom">
+                                <hr/>
+                                <nav>
+                                    <div class="buttons">
+                                        <a href="https://www.gofundme.com/f/stem-for-the-streets" class="outline-navy hover-solid-blue">
+                                            <span class="text">
+                                                Learn More
+                                            </span>
+                                        </a>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="rainbow card" data-color="sfts" data-text-alignment="center" data-vertical-justification="apart">
+                            <div class="top">
+                                <h3>
+                                    <small>
+                                        Reoccurring
+                                    </small>
+                                    <span>
+                                        Become a Monthly Donor
+                                    </span>
+                                </h3>
+                            </div>
+                            <div class="bottom">
+                                <hr/>
+                                <nav>
+                                    <div class="buttons">
+                                        <a href="https://www.gofundme.com/f/stem-for-the-streets" class="outline-navy hover-solid-blue">
+                                            <span class="text">
+                                                Learn More
+                                            </span>
+                                        </a>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="rainbow card" data-color="sfts-dark" data-text-alignment="center" data-vertical-justification="apart">
+                            <div class="top">
+                                <h3>
+                                    <small>
+                                        Corporate
+                                    </small>
+                                    <span>
+                                        Corporate Partnership
+                                    </span>
+                                </h3>
+                            </div>
+                            <div class="bottom">
+                                <hr/>
+                                <nav>
+                                    <div class="buttons">
+                                        <a href="about.html#contact-us" class="outline-navy hover-solid-blue">
+                                            <span class="text">
+                                                Learn More
+                                            </span>
+                                        </a>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--team carousel-->
+        <section class="carousel" data-foreground-color="navy" data-background-color="gray" data-background-pattern="none" data-background-image="false">
+            <div class="lock">
+                <div class="rich-text">
+                    <div class="negate">
+                        <div class="consume">
+                            <h2>
+                                <small>
+                                    Team
+                                </small>
+                                <span>
+                                    View Our Volunteers
+                                </span>
+                            </h2>
+                            <p>
+                                Our team consists of college and high school students who are passionate about STEM and community outreach.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel">
+                    <div class="cards">
+                        <a href="" class="narrow card">
+                            <div class="image" id="member-one">
+                                <!--image of member-->
+                            </div>
+                            <h2>
+                                <small>
+                                    Executive Director
+                                </small>
+                                <span>
+                                    Kevin Akers
+                                </span>
+                            </h2>
+                            <div class="row">
+                                <div>
+                                    <i class="fa fa-map-marker"></i>
+                                    <span>
+                                        UMass Lowell
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="" class="narrow card">
+                            <div class="image" id="member-two">
+                                <!--image of member-->
+                            </div>
+                            <h2>
+                                <small>
+                                    Executive Director
+                                </small>
+                                <span>
+                                    Victor Hugo Del Carpio
+                                </span>
+                            </h2>
+                            <div class="row">
+                                <div>
+                                    <i class="fa fa-map-marker"></i>
+                                    <span>
+                                        Yale University
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="" class="narrow card">
+                            <div class="image" id="member-three">
+                                <!--image of member-->
+                            </div>
+                            <h2>
+                                <small>
+                                    President, DC Chapter
+                                </small>
+                                <span>
+                                    Allison Eastburn
+                                </span>
+                            </h2>
+                            <div class="row">
+                                <div>
+                                    <i class="fa fa-map-marker"></i>
+                                    <span>
+                                        School Without Walls
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="" class="narrow card">
+                            <div class="image" id="member-four">
+                                <!--image of member-->
+                            </div>
+                            <h2>
+                                <small>
+                                    COO
+                                </small>
+                                <span>
+                                    Hrishik Rangaraju
+                                </span>
+                            </h2>
+                            <div class="row">
+                                <div>
+                                    <i class="fa fa-map-marker"></i>
+                                    <span>
+                                        William and Mary College
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="controls">
+                        <button class="previous" type="button">
+                            <i class="nai-icon-caret-left" aria-hidden="true"></i>
+                        </button>
+                        <button class="next" type="button">
+                            <i class="nai-icon-caret-right" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <section class="title">
+            <div class="lock">
+                <a href="index.html" class="home">
+                    <img src="./images/SFTS-Logo.png" style="width: 10em;" alt="STEM for the Streets" aria-hidden="true">
+                </a>
+                <p>
+                    STEM for the Streets is a student-led non-profit organization aimed at exposing historically disenfranchised and under-served children to STEM through hands-on science experiments and engaging lesson plans accompanied by scientists, doctors, and engineers. 
+                </p>
+            </div>
+        </section>
+        <section class="supplemental">
+            <div class="lock">
+                <nav>
+                    <a href="mission.html">
+                        <span class="underline">
+                            <span class="text">
+                                Mission
+                            </span>
+                        </span>
+                    </a>
+                    <a href="mission.html#mission-statement">
+                        <span class="underline">
+                            <span class="text">
+                                Mission Statement
+                            </span>
+                        </span>
+                    </a>
+                    <a href="mission.html#ways-to-support">
+                        <span class="underline">
+                            <span class="text">
+                                Ways to Support
+                            </span>
+                        </span>
+                    </a>
+                    <a href="mission.html#donation-impact">
+                        <span class="underline">
+                            <span class="text">
+                                Donation Impact
+                            </span>
+                        </span>
+                    </a>
+                </nav>
+                <nav class="about-us">
+                    <a href="about.html">
+                        <span class="underline">
+                            <span class="text">
+                                About
+                            </span>
+                        </span>
+                    </a>
+                    <a href="about.html#our-story">
+                        <span class="underline">
+                            <span class="text">
+                                Our Story
+                            </span>
+                        </span>
+                    </a>
+                    <a href="mission.html#our-impact">
+                        <span class="underline">
+                            <span class="text">
+                                Our Impact
+                            </span>
+                        </span>
+                    </a>
+                    <a href="mission.html#our-methodology">
+                        <span class="underline">
+                            <span class="text">
+                                Our Methodology
+                            </span>
+                        </span>
+                    </a>
+                </nav>
+                <nav class="support">
+                    <a class="tickets" href="https://www.gofundme.com/f/stem-for-the-streets">
+                        Donate
+                    </a>
+                    <a href="about.html#contact-us" target="">
+                        Contact Us
+                    </a>
+                </nav>
+            </div>
+        </section>
+        <section class="ancillary">
+            <div class="lock">
+                <div class="information">
+                    <div>
+                        © 2020 STEM for the Streets
+                    </div>
+                    <address>
+                        Washington, D.C.
+                    </address>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script src="./js/all.js"></script>
+</body>
+</html>
