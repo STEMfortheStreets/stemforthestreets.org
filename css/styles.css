@@ -1,0 +1,125 @@
+#member-one {
+    background-image: url(../images/member-one.jpg);
+}
+
+#member-two {
+    background-image: url(../images/member-two.jpg);
+}
+
+#member-three {
+    background-image: url(../images/member-three.jpg);
+}
+
+#member-four {
+    background-image: url(../images/member-four.jpg);
+}
+
+#image-one {
+    background-image: url(../images/header-one.jpg);
+}
+
+#image-two {
+    background-image: url(../images/header-two.jpg)
+}
+
+#image-three {
+    background-image: url(../images/sfts.jpg);
+}
+
+
+#image-five {
+    background-image: url(../images/our-story.jpg);
+    background-position: 0% 65%;
+}
+
+#image-six {
+    background-image: url(../images/sfts3.jpg);
+    background-position: 30% 0;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+
+@media ( -webkit-min-device-pixel-ratio: 2 ), ( min-resolution: 97dpi ) {
+    #member-one {
+        background-image: url(../images/member-one.jpg);
+    }
+    
+    #member-two {
+        background-image: url(../images/member-two.jpg);
+    }
+    
+    #member-three {
+        background-image: url(../images/member-three.jpg);
+    }
+    
+    #member-four {
+        background-image: url(../images/member-four.jpg);
+    }
+
+    #image-one {
+        background-image: url(../images/header-one.jpg);
+    }
+    
+    #image-two {
+        background-image: url(../images/header-two.jpg)
+    }
+
+    #image-three {
+        background-image: url(../images/sfts.jpg);
+    }
+
+    #image-four {
+        background-image: url(../images/sfts2.jpg);
+    }
+
+    
+}
+
+#image-four {
+    background-image: url(../images/sfts2.jpg);  
+}
+
+@media ( min-width: 768px ) {
+    #image-four {
+        background-image: var( --background-gradient ), url(../images/sfts2.jpg);
+    }
+}
+    
+@media ( min-width: 768px ) and ( -webkit-min-device-pixel-ratio: 2 ), ( min-width: 768px ) and ( min-resolution: 97dpi ) {
+    #image-four {
+        background-image: var( --background-gradient ), url(../images/sfts2.jpg);
+    }
+}
+
+#program-one {
+    background-image: var( --background-gradient ), url( ../images/program-one.jpg );
+    background-position: 50% 50%;
+}
+
+@media ( -webkit-min-device-pixel-ratio: 2 ), ( min-resolution: 97dpi ) {
+    #program-one {
+        background-image: var( --background-gradient ), url( ../images/program-one.jpg );
+    }
+}
+
+#program-two {
+    background-image: var( --background-gradient ), url( ../images/program-two.jpg );
+    background-position: 50% 50%;
+}
+
+@media ( -webkit-min-device-pixel-ratio: 2 ), ( min-resolution: 97dpi ) {
+    #program-two {
+        background-image: var( --background-gradient ), url( ../images/program-two.jpg );
+    }
+}
+
+#program-three {
+    background-image: var( --background-gradient ), url( ../images/program-three.jpg );
+    background-position: 50% 50%;
+}
+
+@media ( -webkit-min-device-pixel-ratio: 2 ), ( min-resolution: 97dpi ) {
+    #program-three {
+        background-image: var( --background-gradient ), url( ../images/program-three.jpg );
+    }
+}
