@@ -442,55 +442,23 @@ main section.rainbow-cards .rich-text h2{text-align:center;}
 #olark-container.olark-hidden{top:auto!important;bottom:-100%!important;}
 }
 .olark-notification-badge.olark-hidden{display:none!important;}
-/*! CSS Used from: Embedded */
 #subheader.default[ data-image ] .title::before{background-image:url(../images/header-three.jpg);background-size:cover;}
 @media ( -webkit-min-device-pixel-ratio: 2 ), ( min-resolution: 97dpi ){
 #subheader.default[ data-image ] .title::before{}
 }
-/*
-@media ( min-width: 768px ){
-#subheader.default[ data-image ] .title::before{background-image:var( --background-gradient ), url(https://aqua.org/%20https:/aqua.org/assets/animals/_generic_1920px_1x/2020-02-27_animals_kemps-ridley-sea-turtle-portait_center_001.jpg%20);}
-}*/
-@media ( min-width: 768px ) and ( -webkit-min-device-pixel-ratio: 2 ), ( min-width: 768px ) and ( min-resolution: 97dpi ){
-#subheader.default[ data-image ] .title::before{background-image:var( --background-gradient ), url(https://aqua.org/%20https:/aqua.org/assets/animals/_generic_1920px_2x/2020-02-27_animals_kemps-ridley-sea-turtle-portait_center_001.jpg%20);}
-}
-/*! CSS Used from: Embedded */
-#i16093942443{background-image:url(https://aqua.org/%20https:/aqua.org/assets/people/_generic_768px_1x/2017-06-03_people_masonville-planting_center_001.jpg%20);}
-@media ( -webkit-min-device-pixel-ratio: 2 ), ( min-resolution: 97dpi ){
-#i16093942443{background-image:url(https://aqua.org/%20https:/aqua.org/assets/people/_generic_768px_2x/2017-06-03_people_masonville-planting_center_001.jpg%20);}
-}
-@media ( min-width: 768px ){
-#i16093942443{background-image:url(https://aqua.org/%20https:/aqua.org/assets/people/_generic_1920px_1x/2017-06-03_people_masonville-planting_center_001.jpg%20);}
-}
-@media ( min-width: 768px ) and ( -webkit-min-device-pixel-ratio: 2 ), ( min-width: 768px ) and ( min-resolution: 97dpi ){
-#i16093942443{background-image:url(https://aqua.org/%20https:/aqua.org/assets/people/_generic_1920px_2x/2017-06-03_people_masonville-planting_center_001.jpg%20);}
-}
-/*! CSS Used from: Embedded */
-#i16093942455{background-image:var( --background-gradient ), url(https://aqua.org/%20https:/aqua.org/assets/people/_wide_tile_1x/2018-08-16_animal-care_acrc-workers-giving-duncan-exam_center-center_001.jpg%20);background-position:48.51% 54.04%;}
-@media ( -webkit-min-device-pixel-ratio: 2 ), ( min-resolution: 97dpi ){
-#i16093942455{background-image:var( --background-gradient ), url(https://aqua.org/%20https:/aqua.org/assets/people/_wide_tile_2x/2018-08-16_animal-care_acrc-workers-giving-duncan-exam_center-center_001.jpg%20);}
-}
-/*! CSS Used from: Embedded */
-#i16093942456{background-image:var( --background-gradient ), url(https://aqua.org/%20https:/aqua.org/assets/animals/_wide_tile_1x/2020-04-01_animal_dolphin-jade_center-center_001.jpg%20);background-position:40.46% 44.63%;}
-@media ( -webkit-min-device-pixel-ratio: 2 ), ( min-resolution: 97dpi ){
-#i16093942456{background-image:var( --background-gradient ), url(https://aqua.org/%20https:/aqua.org/assets/animals/_wide_tile_2x/2020-04-01_animal_dolphin-jade_center-center_001.jpg%20);}
-}
-/*! CSS Used from: Embedded */
-#i16093942457{background-image:var( --background-gradient ), url(https://aqua.org/%20https:/aqua.org/assets/landscapes/_wide_tile_1x/2019-10-28_mock-up_waterfront-campus-mockup_center-center_001.jpg%20);background-position:40.11% 62.6%;}
-@media ( -webkit-min-device-pixel-ratio: 2 ), ( min-resolution: 97dpi ){
-#i16093942457{background-image:var( --background-gradient ), url(https://aqua.org/%20https:/aqua.org/assets/landscapes/_wide_tile_2x/2019-10-28_mock-up_waterfront-campus-mockup_center-center_001.jpg%20);}
-}
-/*! CSS Used from: Embedded */
 #olark-wrapper .olark-launch-button{background-color:#012a3a!important;}
 #olark-wrapper .olark-launch-button svg path{fill:#ffffff!important;}
 #olark-wrapper .olark-launch-button .olark-button-text{color:#ffffff!important;}
 #olark-wrapper .olark-top-bar{background-color:#012a3a!important;color:#ffffff!important;border-color:#011923!important;}
 #olark-wrapper .olark-top-bar-text{color:#ffffff!important;}
 #olark-wrapper .olark-top-bar-arrow{fill:#ffffff!important;}
-/*! CSS Used keyframes */
 @-moz-keyframes loadBubble{0%{transform:scale(0);opacity:0;}100%{transform:scale(1);opacity:1;}}
 @-webkit-keyframes loadBubble{0%{transform:scale(0);opacity:0;}100%{transform:scale(1);opacity:1;}}
 @-o-keyframes loadBubble{0%{transform:scale(0);opacity:0;}100%{transform:scale(1);opacity:1;}}
 @keyframes loadBubble{0%{transform:scale(0);opacity:0;}100%{transform:scale(1);opacity:1;}}
-/*! CSS Used fontfaces */
-@font-face{font-family:'nai-icons';src:url('https://aqua.org/fonts/nai-icons.ttf?na1vn3') format('truetype'),     url('https://aqua.org/fonts/nai-icons.woff?na1vn3') format('woff'),     url('https://aqua.org/fonts/nai-icons.svg?na1vn3#nai-icons') format('svg');font-weight:normal;font-style:normal;font-display:block;}
+@media screen and (max-width: 600px) {
+    #hide {
+      visibility: hidden;
+      display: none;
+    }
+  }
